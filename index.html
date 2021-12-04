@@ -422,33 +422,65 @@
             </button>
             <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
             <form action="#" class="modal-form">
-                <label class="form-input-text">Имя
+                <div class="modal-field">
+                <label for="user-name" class="form-input-text">Имя</label>
                     <input 
                         type="text" 
                         name="user-name" 
+                        id="user-name"
                         class="modal-form-input"
                         required 
                         minlength="2"
                     />
-                </label>
-                <label class="form-input-text">Телефон
+                    <svg class="person-modal" wight="18" height="18">
+                        <use href="./images/symbol-defs.svg#icon-person-black-modal"></use>
+                    </svg>
+                </div>
+                <div class="modal-field">
+                <label for="user-tel" class="form-input-text">Телефон</label>
                     <input 
                         type="tel" 
                         name="user-tel" 
+                        id="user-tel"
                         class="modal-form-input"
                         required 
                     />
-                </label>
-                <label class="form-input-text">Почта
+                    <svg class="person-modal" wight="18" height="18">
+                        <use href="./images/symbol-defs.svg#icon-phone-black-modal"></use>
+                    </svg>
+                </div>
+                <div class="modal-field">
+                <label for="user-email" class="form-input-text">Почта</label>
                     <input 
                         type="email" 
-                        name="user-email" 
+                        name="user-email"
+                        id="user-email" 
                         class="modal-form-input"
                         required 
-                        placeholder="Введите текст"
                     />
+                    <svg class="person-modal" wight="18" height="18">
+                        <use href="./images/symbol-defs.svg#icon-email-black-modal"></use>
+                    </svg>
+                </div>
+                <div>
+                <label for="feedback" class="form-input-text">Комментарий</label>
+                    <textarea
+                        class="modal-form-text" 
+                        name="feedback" 
+                        id="feedback" 
+                        placeholder="Введите текст"
+                    ></textarea>
+                </div>
+                <div class="checkbox-text">
+                <label for="checkbox"></label>
+                <p class="checkbox-pre-tex">Соглашаюсь с рассылкой и принимаю</p>
+                <a class="checkbox-link" href="">Условия договора</a>
+                    <input 
+                        type="checkbox"
+                        name="checkbox"/>
                 </label>
-                <button type="submit">Отправить</button>
+                </div>
+                <button class="modal-button" type="submit">Отправить</button>
             </form>
         </div>
     </div>
