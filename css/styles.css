@@ -913,6 +913,11 @@ address {
   transition: transform 500ms;
 }
 
+.modal-close-icon {
+  width: 18px;
+  height: 18px;
+}
+
 .modal-close {
   width: 30px;
   height: 30px;
@@ -1140,6 +1145,10 @@ address {
 .modal-check:checked + .check-text .check-icon {
   background-color: var(--accent-color);
   border: none;
+}
+
+.modal-check:focus + .check-text .check-icon {
+  border-color: var(--accent-color);
 }
 
 .modal-field-check {
